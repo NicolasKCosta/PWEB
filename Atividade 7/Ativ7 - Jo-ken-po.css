@@ -1,0 +1,24 @@
+.grid-container {
+	display: grid;
+	justify-content: space-between;
+  	grid-template-columns: auto auto auto; /*Make the grid smaller than the container*/
+  	grid-gap: 10px;
+  	padding: 300px;
+}
+
+.grid-container > div {
+  	text-align: center;
+  	padding: 20px 0;
+  	font-size: 80px;
+}
+
+.button1 {
+	padding: 32px 16px;
+	font-size: 30px;
+	background-color: #A1233849;
+	border-radius: 50px;
+}
+
+body {
+	background-image: url("Ativ7 - Jo-ken-po.jpg");
+}

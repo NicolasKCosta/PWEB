@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="teste" method="POST" name="formulario" id="formulario" onsubmit="return validacao();">
+        <div>
+            <div>
+                <label for="idNome">Nome:</label>
+                <input class="input" name="idNome" type="text" id="idNome"> 
+            </div>
+            <div>
+                <label for="idEmail">Email:</label>
+                <input class="input" name="idEmail" type="text" id="idEmail"> 
+            </div>
+            <div>
+                <label for="idComent">Comentário</label>
+                <textarea name ="idComent" id="idComent" value="" input></textarea>
+            </div>
+            <div>
+                <br>
+                <h3 class="h">Pesquisa:</h3>
+                <h5 class="h">Primeira vez nesta página?</h5>
+            </div>
+            <div class="div">
+                <input type="radio" name="opcao" id="radioSim" value="sim">Sim 
+                <input type="radio" name="opcao" id="radioNao" value="não">Não
+            </div>
+            <div class="buttons">
+                <input name="Submit" type="submit" form="formulario" value="Enviar">
+                <input name="Reset" type="reset" form="formulario" value="Redefinir">
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

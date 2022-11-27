@@ -1,0 +1,80 @@
+head{
+    font-size: 100;
+}
+
+body{
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+}
+
+form{
+    color: rgb(47, 236, 0);
+    margin: 7em auto;
+    width: 440px;
+    padding: 1em;
+    border: 1px solid rgb(47, 236, 0);
+    border-radius: 1em;
+    background-color: rgba(0, 48, 0, 0.877);
+}
+
+.input{
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+
+textarea {
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    padding: 1em;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    color: rgb(47, 236, 0);
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+.input:focus, textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #000;
+}
+
+.h{
+    text-align: center;
+}
+
+.div{
+    text-align: center;
+}
+.buttons{
+    text-align: center;
+}
+.buttons input{
+    margin: 0 25px;
+    padding: 10px 15px;
+    color: rgb(47, 236, 0);
+	background-color: black;
+	border-radius: 50px;
+}

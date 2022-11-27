@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Opções de Cursos</title>
+
+		<style type="text/css">
+			body{
+				font-family: Copperplate, Papyrus, fantasy;
+				border: 2px solid gray;
+				width: 650px;
+				height: 630px;
+				margin: 5px auto;
+				color: blue;
+				text-align: center;
+			}
+			h1{
+				font-size: 20px;
+				background-color: lightgray;
+			}
+			select{
+				width: 500px;
+				font-size: 25px;
+
+			} 
+			button{
+				background-color: lightgreen;
+				width: 100px;
+				margin: 15px;
+				font-size: 25px;
+			}
+			
+
+		</style>
+	</head>
+
+	<body>
+		<h1><strong>Escolha um dos cursos para ver detalhadamente</strong></h1>
+		<hr>
+		<section>
+			<select id="cursos" cols="30">
+				
+				<option value=""></option>
+				<option value="ads">Análise e Desenvolvimento de Sistemas</option>
+				<option value="ea">Eletrônica Automotiva</option>
+				<option value="fm">Fabricação Mecânica</option>
+				<option value="ead-ge">Gestão Empresarial - EAD</option>
+				<option value="gq">Gestão da Qualidade</option>
+				<option value="log">Logística</option>
+				<option value="ma">Manufatura Avançada</option>
+				<option value="pm">Processos Metalúrgicos</option>
+				<option value="pol">Polímeros</option>
+				<option value="proj">Projetos Mecânicos</option>
+				<option value="sb">Sistemas Biomédicos</option>
+
+			</select>	
+			<button type="button" id='validar' value="validar" onclick="validar_seletor()">OK</button>
+			<hr>
+			<br><br>
+
+			<div class="fatec_vestibular">
+				<a href="http://fatecsorocaba.edu.br/vestibular.asp"><img src="imagens/fatec_vestibular.jpg" width="650px" height=auto></img></a>
+			</div>
+
+		<script type="text/javascript">
+			
+		function validar_seletor(){
+
+			var curso_selecionado = document.getElementById('cursos').value;
+			var pagina_inicial = "file:///D:/1FATECADS/1EQUIPES/FATEC%20ADS%205%20SEMESTRE/PROGRAMACAO%20WEB/PWEB%20Atividades/atividade15/atividade15.html";
+			var pagina_destino = "http://fatecsorocaba.edu.br/";
+
+
+			if(curso_selecionado == ""){
+			
+				alert("Nenhum curso foi selecionado!!!!")
+			
+			}else{
+
+				alert("Você será direcionado para Página Oficial da Fatec - Sorocaba")
+				window.location = pagina_inicial;
+				window.location.assign(pagina_destino + "curso_" + curso_selecionado + ".asp")
+			
+			}
+		}
+		</script>
+	</body>
+</html>
